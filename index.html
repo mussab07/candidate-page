@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Dorsen - Security Professional Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="content-area">
+      <!-- LEFT COLUMN -->
+      <div class="left-col">
+        <!-- HERO CARD -->
+        <div class="hero-card">
+          <div class="hero-bg">
+            <canvas id="gridCanvas" class="hero-grid-canvas"></canvas>
+            <div class="hero-gradient-overlay"></div>
+            <div class="hero-glow">
+              <img src="images/ellipse_glow.svg" alt="" class="glow-img">
+            </div>
+          </div>
+          <div class="hero-content">
+            <div class="hero-top">
+              <div class="avatar-wrap">
+                <div class="avatar">
+                  <img src="images/avatar_headshot.png" alt="Felix Dorsen">
+                </div>
+                <img src="images/gt_badge.svg" alt="Verified" class="avatar-badge">
+              </div>
+              <div class="hero-info">
+                <h1 class="hero-name">Felix Dorsen</h1>
+                <p class="hero-title">Door Supervisor at 123 Security Group</p>
+              </div>
+            </div>
+            <div class="hero-contact">
+              <div class="contact-pill">
+                <img src="images/icons/location.svg" alt="" class="pill-icon">
+                <span>Huddersfield, UK</span>
+              </div>
+              <div class="contact-pill">
+                <img src="images/icons/phone.svg" alt="" class="pill-icon">
+                <span>07384006086</span>
+              </div>
+              <div class="contact-pill">
+                <img src="images/icons/mail.svg" alt="" class="pill-icon">
+                <span>tosinjnnr@yahoo.com</span>
+              </div>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-value">2</span>
+                <span class="stat-label">Licences</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-value">8+ yrs</span>
+                <span class="stat-label">Experience</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-value">6</span>
+                <span class="stat-label">Badges</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <img src="images/verified_check.svg" alt="Verified" class="stat-check">
+                <span class="stat-label">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LICENCES -->
+        <div class="card">
+          <h2 class="card-title">Licences</h2>
+          <div class="licences-grid">
+            <!-- Door Supervisor Card -->
+            <div class="licence-card">
+              <div class="licence-inner" style="background:#1172b4;">
+                <!-- SIA watermark emblem -->
+                <div class="licence-emblem">
+                  <img src="images/sia_emblem_ds.svg" alt="" class="licence-emblem-img">
+                </div>
+                <!-- Side strip -->
+                <div class="licence-strip" style="background:#ffa339;">
+                  <span class="licence-strip-text">Door Supervisor</span>
+                </div>
+                <!-- Card number -->
+                <p class="licence-number">1102 0304 0506 7781</p>
+                <!-- SIA details -->
+                <div class="licence-details">
+                  <p class="licence-authority">Security Industry Authority</p>
+                  <p class="licence-expires-label">EXPIRES</p>
+                  <p class="licence-expires-date">02 FEB 2025</p>
+                  <p class="licence-holder">J. SMITH</p>
+                </div>
+                <!-- SIA logo -->
+                <div class="licence-sia-logo">
+                  <img src="images/sia_logo_ds.svg" alt="SIA" class="licence-sia-logo-img">
+                </div>
+                <p class="licence-label">LICENCE</p>
+                <!-- Photo placeholder -->
+                <div class="licence-photo">
+                  <div class="licence-photo-head"></div>
+                  <div class="licence-photo-body"></div>
+                </div>
+              </div>
+              <div class="licence-overlay">
+                <span class="licence-name">Door<br>Supervisor</span>
+              </div>
+            </div>
+            <!-- CCTV Card -->
+            <div class="licence-card">
+              <div class="licence-inner" style="background:#1172b4;">
+                <!-- SIA watermark emblem -->
+                <div class="licence-emblem">
+                  <img src="images/sia_emblem_cctv.svg" alt="" class="licence-emblem-img">
+                </div>
+                <!-- Side strip -->
+                <div class="licence-strip" style="background:#e30070;">
+                  <span class="licence-strip-text">CCTV</span>
+                </div>
+                <!-- Card number -->
+                <p class="licence-number">1102 0304 0506 7781</p>
+                <!-- SIA details -->
+                <div class="licence-details">
+                  <p class="licence-authority">Security Industry Authority</p>
+                  <p class="licence-expires-label">EXPIRES</p>
+                  <p class="licence-expires-date">02 FEB 2025</p>
+                  <p class="licence-holder">J. SMITH</p>
+                </div>
+                <!-- SIA logo -->
+                <div class="licence-sia-logo">
+                  <img src="images/sia_logo_cctv.svg" alt="SIA" class="licence-sia-logo-img">
+                </div>
+                <p class="licence-label">LICENCE</p>
+                <!-- Photo placeholder -->
+                <div class="licence-photo">
+                  <div class="licence-photo-head"></div>
+                  <div class="licence-photo-body"></div>
+                </div>
+              </div>
+              <div class="licence-overlay">
+                <span class="licence-name">CCTV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VERIFIED SKILLS -->
+        <div class="card card--badges collapsed" id="badgesCard">
+          <div class="card-header-row">
+            <h2 class="card-title">Verified Skills <span class="badge-count">20</span></h2>
+            <button class="collapse-btn" id="badgesToggle">
+              <img src="images/icons/arrow_down.svg" alt="" class="collapse-icon">
+            </button>
+          </div>
+          <div class="badges-wrap" id="badgesWrap">
+          <div class="badges-row" id="badgesRow">
+            <div class="badge-item">
+              <img src="images/badges/nato_alphabet.png" alt="NATO Alphabet" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/conflict_management.png" alt="Conflict Management" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/using_radios.png" alt="Using Radios" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/problem_solving.png" alt="Problem Solving" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/fire_safety.png" alt="Fire Safety" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/emergency_response.png" alt="Emergency Response" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/nato_alphabet.png" alt="NATO Alphabet" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/conflict_management.png" alt="Conflict Management" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/using_radios.png" alt="Using Radios" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/problem_solving.png" alt="Problem Solving" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/fire_safety.png" alt="Fire Safety" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/emergency_response.png" alt="Emergency Response" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/nato_alphabet.png" alt="NATO Alphabet" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/conflict_management.png" alt="Conflict Management" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/using_radios.png" alt="Using Radios" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/problem_solving.png" alt="Problem Solving" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/fire_safety.png" alt="Fire Safety" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/emergency_response.png" alt="Emergency Response" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/nato_alphabet.png" alt="NATO Alphabet" class="badge-img">
+            </div>
+            <div class="badge-item">
+              <img src="images/badges/conflict_management.png" alt="Conflict Management" class="badge-img">
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- PHOTOS -->
+        <div class="card">
+          <h2 class="card-title">On the Job</h2>
+          <div class="photos-grid">
+            <div class="photos-col">
+              <div class="photo-item">
+                <img src="images/photo_1.png" alt="Photo 1">
+              </div>
+              <div class="photo-item">
+                <img src="images/photo_2.png" alt="Photo 2">
+              </div>
+            </div>
+            <div class="photos-col photos-col--tall">
+              <div class="photo-item photo-item--tall">
+                <img src="images/photo_3.png" alt="Photo 3">
+              </div>
+            </div>
+            <div class="photos-col">
+              <div class="photo-item">
+                <img src="images/photo_4.png" alt="Photo 4">
+              </div>
+              <div class="photo-item">
+                <img src="images/photo_5.png" alt="Photo 5">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAREER HISTORY -->
+        <div class="card">
+          <h2 class="card-title">Career history</h2>
+          <div class="career-list">
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/briefcase.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Temp Driver</span>
+                  <span class="career-company">Driver Hire</span>
+                </div>
+              </div>
+              <span class="career-date">Jan 2025 - Present</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/career_gap.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Career Gap</span>
+                  <span class="career-company">Working for Driver Hire</span>
+                </div>
+              </div>
+              <span class="career-date">May 2024 - Dec 2024</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/briefcase.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Van Driver</span>
+                  <span class="career-company">Leuco</span>
+                </div>
+              </div>
+              <span class="career-date">Jan 2024 - Apr 2024</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/briefcase.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Carer</span>
+                  <span class="career-company">Comfort Call</span>
+                </div>
+              </div>
+              <span class="career-date">Aug 2023 - Dec 2023</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/career_gap.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Unemployment</span>
+                  <span class="career-company">Looking for work</span>
+                </div>
+              </div>
+              <span class="career-date">Dec 2022 - Aug 2023</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/briefcase.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Van Driver</span>
+                  <span class="career-company">Garrards Timber</span>
+                </div>
+              </div>
+              <span class="career-date">Aug 2022 - Dec 2022</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/career_gap.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">Unemployment</span>
+                  <span class="career-company">Looking for work</span>
+                </div>
+              </div>
+              <span class="career-date">Mar 2021 - Jul 2022</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/education.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">CLAIT Diploma</span>
+                  <span class="career-company">National Business College</span>
+                </div>
+              </div>
+              <span class="career-date">Jan 2021 - Feb 2021</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/education.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">GCSE</span>
+                  <span class="career-company">Newsome High</span>
+                </div>
+              </div>
+              <span class="career-date">Jun 2000 - Jul 2000</span>
+            </div>
+            <div class="career-item">
+              <div class="career-left">
+                <img src="images/icons/education.svg" alt="" class="career-icon">
+                <div class="career-info">
+                  <span class="career-role">CLAIT Diploma</span>
+                  <span class="career-company">National Business College</span>
+                </div>
+              </div>
+              <span class="career-date">Jan 2000 - May 2000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-col">
+        <!-- SHARE PROFILE -->
+        <div class="card">
+          <h2 class="card-title">Share profile</h2>
+          <div class="share-list">
+            <button class="share-btn" id="copyLinkBtn">
+              <img src="images/icons/copy_link.svg" alt="" class="share-icon">
+              <span>Copy link</span>
+            </button>
+            <button class="share-btn">
+              <img src="images/icons/whatsapp.svg" alt="" class="share-icon">
+              <span>Share on WhatsApp</span>
+            </button>
+            <button class="share-btn">
+              <img src="images/icons/facebook.svg" alt="" class="share-icon">
+              <span>Share on Facebook</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PROMO BANNER -->
+        <div class="promo-card">
+          <div class="promo-text">
+            <p class="promo-heading">The smartest way to hire Security Workers.</p>
+            <a href="#" class="promo-btn">Post Job</a>
+          </div>
+          <div class="promo-image">
+            <img src="images/promo_vector.svg" alt="" class="promo-vector">
+            <img src="images/promo_misc.png" alt="" class="promo-misc">
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-card">
+          <p class="cta-text">Looking for security jobs?<br>Showcase your skills to employers.</p>
+          <a href="#" class="cta-link">
+            <span>Create your profile</span>
+            <img src="images/icons/arrow_right_green.svg" alt="" class="cta-arrow-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-left">Copyright 2025 | Get Licensed Limited | Company No. 07154333</p>
+      <div class="footer-right">
+        <a href="#">Terms of service</a>
+        <span class="footer-sep">|</span>
+        <a href="#">Privacy Policy</a>
+        <span class="footer-sep">|</span>
+        <a href="#">Quality Policy</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

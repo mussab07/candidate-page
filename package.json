@@ -1,0 +1,7 @@
+{
+  "name": "get-licensed-profile",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}
